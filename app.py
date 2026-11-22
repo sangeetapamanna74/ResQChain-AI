@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 
-N8N_API_URL = "http://localhost:5678/webhook/50403f1d-9299-4469-ba7a-f4de2bc1d4dc"
+N8N_API_URL = st.secrets["N8N_API_URL"]
 
 st.set_page_config(
     page_title="ResQChain AI",
